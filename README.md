@@ -1,3 +1,3 @@
 # homeClimateApp
 
-Building a simple home cliate app as a sample iOS Project
+Building a simple home climate app as a sample iOS Project
