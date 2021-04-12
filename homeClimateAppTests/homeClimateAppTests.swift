@@ -22,7 +22,16 @@ class homeClimateAppTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         XCTAssert("Test" == "Test")
-//        XCTAssert("Test" == "Tests")
+
+    }
+    
+    func testClimateData() throws {
+        // Test the ClimateData object
+        let currentTime = Date.init()
+        let climateData = ClimateData(timeStamp: currentTime, temperature: 19.6, humidity: 99.1, location: ClimateLocation(name: "Office", latitude: 44.1, longitude: 44.1 ))
+        
+        XCTAssert(climateData.location.name == "Office")
+        XCTAssert(climateData.timeStamp == currentTime)
     }
 
     func testPerformanceExample() throws {
