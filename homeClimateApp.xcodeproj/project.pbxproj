@@ -25,6 +25,8 @@
 		438686D4262681F00035FE03 /* ClimateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438686D2262681F00035FE03 /* ClimateModel.swift */; };
 		438686D9262716F10035FE03 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 438686D8262716F10035FE03 /* Data */; };
 		438686E32627178A0035FE03 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 438686D8262716F10035FE03 /* Data */; };
+		438686E826273C8A0035FE03 /* ClimateModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438686E726273C8A0035FE03 /* ClimateModelList.swift */; };
+		438686E926273C8A0035FE03 /* ClimateModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438686E726273C8A0035FE03 /* ClimateModelList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 		438686652623E9A20035FE03 /* ClimateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateManager.swift; sourceTree = "<group>"; };
 		438686D2262681F00035FE03 /* ClimateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateModel.swift; sourceTree = "<group>"; };
 		438686D8262716F10035FE03 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = homeClimateApp/Data; sourceTree = "<group>"; };
+		438686E726273C8A0035FE03 /* ClimateModelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateModelList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,7 @@
 				4386865C2623E35C0035FE03 /* ClimateLocation.swift */,
 				438686652623E9A20035FE03 /* ClimateManager.swift */,
 				438686D2262681F00035FE03 /* ClimateModel.swift */,
+				438686E726273C8A0035FE03 /* ClimateModelList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +313,7 @@
 				4331575F2623984500DD9DAB /* ViewController.swift in Sources */,
 				438686542623BF1A0035FE03 /* ClimateData.swift in Sources */,
 				4331575B2623984500DD9DAB /* AppDelegate.swift in Sources */,
+				438686E826273C8A0035FE03 /* ClimateModelList.swift in Sources */,
 				4331575D2623984500DD9DAB /* SceneDelegate.swift in Sources */,
 				438686662623E9A20035FE03 /* ClimateManager.swift in Sources */,
 			);
@@ -321,6 +326,7 @@
 				433157722623984600DD9DAB /* homeClimateAppTests.swift in Sources */,
 				438686672623E9A20035FE03 /* ClimateManager.swift in Sources */,
 				438686D4262681F00035FE03 /* ClimateModel.swift in Sources */,
+				438686E926273C8A0035FE03 /* ClimateModelList.swift in Sources */,
 				4386865E2623E35C0035FE03 /* ClimateLocation.swift in Sources */,
 				438686552623BF1A0035FE03 /* ClimateData.swift in Sources */,
 			);

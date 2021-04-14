@@ -10,6 +10,7 @@ import Foundation
 struct ClimateManager {
     
     var climateModelArray = [ClimateModel]()
+    var climateModelList = ClimateModelList()
     
     func loadJSON(_ path: String) -> Data? {
         
@@ -30,7 +31,13 @@ struct ClimateManager {
     }
     
     mutating func parseJSON(_ climateData: Data) -> [ClimateModel]? {
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
         let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(formatter)
+        
         do {
             let decodedData = try decoder.decode(ClimateData.self, from: climateData)
             print("✅ Managed to decode the data")
@@ -46,6 +53,7 @@ struct ClimateManager {
                 let climate = ClimateModel(timeStamp: timeStamp, temperature: temperature, humidity: humidity, location: location)
                 
                 climateModelArray.append(climate)
+                climateModelList.add(climateModel: climate)
                 
             }
             

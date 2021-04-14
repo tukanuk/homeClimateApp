@@ -8,7 +8,7 @@
 import Foundation
 
 struct ClimateModel {
-    var timeStamp : String
+    var timeStamp : Date
     var temperature : Double
     var humidity : Double
     var location : String

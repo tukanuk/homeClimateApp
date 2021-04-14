@@ -8,10 +8,11 @@
 import Foundation
 
 struct ClimateDataElement : Decodable {
-        let timeStamp : String
-        let temperature : Float
-        let humidity : Float
-        let location : String
+    //        let timeStamp : String
+    let timeStamp : Date
+    let temperature : Float
+    let humidity : Float
+    let location : String
 }
 
 typealias ClimateData = [ClimateDataElement]

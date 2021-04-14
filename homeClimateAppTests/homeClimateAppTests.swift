@@ -27,8 +27,8 @@ class homeClimateAppTests: XCTestCase {
     
     func testClimateData() throws {
         // Test the ClimateData object
-        let currentTime = "2021-03-18 00:00:00"
-//        let currentTime = Date.init()
+//        let currentTime = "2021-03-18 00:00:00"
+        let currentTime = Date.init()
         let climateModel = ClimateModel(timeStamp: currentTime, temperature: 19.6, humidity: 99.1, location: "Office")
         
         XCTAssert(climateModel.location == "Office")
@@ -49,7 +49,7 @@ class homeClimateAppTests: XCTestCase {
         let testData = climateManager.loadJSON("Data/sampleDataOneRecord")!
         let climateModel = climateManager.parseJSON(testData)
         
-        XCTAssert(climateModel![0].temperature == 20.0)
+        XCTAssert(climateModel?[0].temperature == 20.0)
     }
     
     func testJSONDecoder() throws {
@@ -57,7 +57,20 @@ class homeClimateAppTests: XCTestCase {
         let testData = climateManager.loadJSON("Data/sampleData")
         let climateModel = climateManager.parseJSON(testData!)
         
-        XCTAssert(climateModel!.count == 21)
+        XCTAssert(climateModel?.count == 21)
+    }
+    
+    func testClimateModelListAdd() throws {
+        var climateModelList = ClimateModelList()
+        let climateModelBasement = ClimateModel(timeStamp: Date.init(), temperature: 10, humidity: 50, location: "Basement")
+        let climateModelOffice = ClimateModel(timeStamp: Date.init(), temperature: 20, humidity: 100, location: "Office")
+        
+        climateModelList.add(climateModel: climateModelBasement)
+        climateModelList.add(climateModel: climateModelOffice)
+        
+        print("Average: \(climateModelList.avgTemperature())")
+        
+        XCTAssert(climateModelList.avgTemperature() == 15.0)
     }
 
 }
