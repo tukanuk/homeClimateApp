@@ -37,19 +37,27 @@ class homeClimateAppTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+//        self.measure {
             // Put the code you want to measure the time of here.
-        }
+//        }
     }
     
-    func testJSONdecoder() throws {
+    func testJSONdecoderSingleRecord() throws {
         // Test the JSON Decoder
 
-        let climateManager = ClimateManager()
+        var climateManager = ClimateManager()
         let testData = climateManager.loadJSON("Data/sampleDataOneRecord")!
         let climateModel = climateManager.parseJSON(testData)
         
-        XCTAssert(climateModel!.temperature == 20.0)
+        XCTAssert(climateModel![0].temperature == 20.0)
+    }
+    
+    func testJSONDecoder() throws {
+        var climateManager = ClimateManager()
+        let testData = climateManager.loadJSON("Data/sampleData")
+        let climateModel = climateManager.parseJSON(testData!)
+        
+        XCTAssert(climateModel!.count == 21)
     }
 
 }

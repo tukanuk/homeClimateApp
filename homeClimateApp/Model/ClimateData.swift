@@ -7,9 +7,11 @@
 
 import Foundation
 
-struct ClimateData {
-    var timeStamp : Date
-    var temperature : Float
-    var humidity : Float
-    var location : ClimateLocation
+struct ClimateDataElement : Decodable {
+        let timeStamp : String
+        let temperature : Float
+        let humidity : Float
+        let location : String
 }
+
+typealias ClimateData = [ClimateDataElement]
