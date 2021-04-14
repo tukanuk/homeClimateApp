@@ -27,11 +27,12 @@ class homeClimateAppTests: XCTestCase {
     
     func testClimateData() throws {
         // Test the ClimateData object
-        let currentTime = Date.init()
-        let climateData = ClimateData(timeStamp: currentTime, temperature: 19.6, humidity: 99.1, location: ClimateLocation(name: "Office", latitude: 44.1, longitude: 44.1 ))
+        let currentTime = "2021-03-18 00:00:00"
+//        let currentTime = Date.init()
+        let climateModel = ClimateModel(timeStamp: currentTime, temperature: 19.6, humidity: 99.1, location: "Office")
         
-        XCTAssert(climateData.location.name == "Office")
-        XCTAssert(climateData.timeStamp == currentTime)
+        XCTAssert(climateModel.location == "Office")
+        XCTAssert(climateModel.timeStamp == currentTime)
     }
 
     func testPerformanceExample() throws {
@@ -39,6 +40,16 @@ class homeClimateAppTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testJSONdecoder() throws {
+        // Test the JSON Decoder
+
+        let climateManager = ClimateManager()
+        let testData = climateManager.loadJSON("Data/sampleDataOneRecord")!
+        let climateModel = climateManager.parseJSON(testData)
+        
+        XCTAssert(climateModel!.temperature == 20.0)
     }
 
 }

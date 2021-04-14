@@ -21,6 +21,10 @@
 		4386865E2623E35C0035FE03 /* ClimateLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4386865C2623E35C0035FE03 /* ClimateLocation.swift */; };
 		438686662623E9A20035FE03 /* ClimateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438686652623E9A20035FE03 /* ClimateManager.swift */; };
 		438686672623E9A20035FE03 /* ClimateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438686652623E9A20035FE03 /* ClimateManager.swift */; };
+		438686D3262681F00035FE03 /* ClimateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438686D2262681F00035FE03 /* ClimateModel.swift */; };
+		438686D4262681F00035FE03 /* ClimateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438686D2262681F00035FE03 /* ClimateModel.swift */; };
+		438686D9262716F10035FE03 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 438686D8262716F10035FE03 /* Data */; };
+		438686E32627178A0035FE03 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 438686D8262716F10035FE03 /* Data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,8 @@
 		438686532623BF1A0035FE03 /* ClimateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateData.swift; sourceTree = "<group>"; };
 		4386865C2623E35C0035FE03 /* ClimateLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateLocation.swift; sourceTree = "<group>"; };
 		438686652623E9A20035FE03 /* ClimateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateManager.swift; sourceTree = "<group>"; };
+		438686D2262681F00035FE03 /* ClimateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateModel.swift; sourceTree = "<group>"; };
+		438686D8262716F10035FE03 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = homeClimateApp/Data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 		4331574E2623984400DD9DAB = {
 			isa = PBXGroup;
 			children = (
+				438686D8262716F10035FE03 /* Data */,
 				433157592623984500DD9DAB /* homeClimateApp */,
 				433157702623984600DD9DAB /* homeClimateAppTests */,
 				4331577B2623984600DD9DAB /* homeClimateAppUITests */,
@@ -160,6 +167,7 @@
 				438686532623BF1A0035FE03 /* ClimateData.swift */,
 				4386865C2623E35C0035FE03 /* ClimateLocation.swift */,
 				438686652623E9A20035FE03 /* ClimateManager.swift */,
+				438686D2262681F00035FE03 /* ClimateModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438686E32627178A0035FE03 /* Data in Resources */,
 				433157672623984500DD9DAB /* LaunchScreen.storyboard in Resources */,
 				433157642623984500DD9DAB /* Assets.xcassets in Resources */,
 				433157622623984500DD9DAB /* Main.storyboard in Resources */,
@@ -277,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438686D9262716F10035FE03 /* Data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4386865D2623E35C0035FE03 /* ClimateLocation.swift in Sources */,
+				438686D3262681F00035FE03 /* ClimateModel.swift in Sources */,
 				4331575F2623984500DD9DAB /* ViewController.swift in Sources */,
 				438686542623BF1A0035FE03 /* ClimateData.swift in Sources */,
 				4331575B2623984500DD9DAB /* AppDelegate.swift in Sources */,
@@ -309,6 +320,7 @@
 			files = (
 				433157722623984600DD9DAB /* homeClimateAppTests.swift in Sources */,
 				438686672623E9A20035FE03 /* ClimateManager.swift in Sources */,
+				438686D4262681F00035FE03 /* ClimateModel.swift in Sources */,
 				4386865E2623E35C0035FE03 /* ClimateLocation.swift in Sources */,
 				438686552623BF1A0035FE03 /* ClimateData.swift in Sources */,
 			);

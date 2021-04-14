@@ -8,6 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    var climateManager = ClimateManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()

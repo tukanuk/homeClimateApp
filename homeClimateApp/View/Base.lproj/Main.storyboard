@@ -29,13 +29,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ColumnChart" translatesAutoresizingMaskIntoConstraints="NO" id="8xW-t5-kHl">
-                                        <rect key="frame" x="0.0" y="35" width="350" height="299"/>
+                                        <rect key="frame" x="0.0" y="35" width="350" height="397.66666666666669"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="1mA-TX-KpP"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="1mA-TX-KpP"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJz-12-USF">
-                                        <rect key="frame" x="0.0" y="344" width="350" height="25"/>
+                                        <rect key="frame" x="0.0" y="442.66666666666669" width="350" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Jgm-vp-VGa"/>
                                         </constraints>
@@ -44,10 +44,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoo-vc-lZP">
-                                        <rect key="frame" x="0.0" y="379" width="350" height="67"/>
+                                        <rect key="frame" x="0.0" y="477.66666666666657" width="350" height="69.333333333333314"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="nfz-aK-6AK"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="nfz-aK-6AK"/>
                                         </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -55,7 +55,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b43-kh-zn4">
-                                        <rect key="frame" x="0.0" y="456" width="350" height="25"/>
+                                        <rect key="frame" x="0.0" y="557" width="350" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="YIK-o8-9rn"/>
                                         </constraints>
@@ -64,10 +64,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="80T-76-Pp6">
-                                        <rect key="frame" x="0.0" y="491" width="350" height="215"/>
+                                        <rect key="frame" x="0.0" y="592" width="350" height="114"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="geV-6H-uYb"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="geV-6H-uYb"/>
                                         </constraints>
                                     </tableView>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQO-ix-fDi">
