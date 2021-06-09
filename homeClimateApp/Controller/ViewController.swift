@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var DetailText: UITextView!
     
     var climateManager = ClimateManager()
-    let vegetables = ["Carrot", "Broccoli", "Cucumber"]
+    let vegetables = ["Carrot", "Broccoli", "Cucumber", "Red Pepper", "Squash", "Zuchini"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +21,21 @@ class ViewController: UIViewController {
         
         let data = climateManager.loadJSON("Data/sampleData")
         let results = climateManager.parseJSON(data!)
-//
+
         // create output
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM d, y HH:mm"
+        formatter.dateFormat = "y-MMdd HH:mm"
         
-//        let detail : String = formatter.string(from: results![0].timeStamp) + "\n\(results![0].temperature)"
+        // Create an array of just timestamps
+        // Problem here is that this is not available in time for the tableView to use it
+        var timeStamps = [String]()
+        for result in results! {
+            timeStamps.append(formatter.string(from: result.timeStamp))
+        }
         
         var detailText = ""
         for rec in results! {
-            detailText += "⏰ \(formatter.string(from: rec.timeStamp)) :: 🌡\(rec.temperature)C 💦\(rec.humidity)%\n"
+            detailText += "\(formatter.string(from: rec.timeStamp)) : 🌡\(rec.temperature)C\t\t💦\(rec.humidity)%\n"
         }
         
         DetailText.text = detailText
@@ -47,8 +52,8 @@ class ViewController: UIViewController {
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return vegetables.count
-        return 3
+        return vegetables.count
+//        return timeStamps.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
